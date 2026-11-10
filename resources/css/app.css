@@ -1,0 +1,157 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 213, 201);
+}
+#gesamt {
+    display: flex;    
+}
+
+form {
+    display: grid;
+    row-gap: 10px;
+    padding: 20px;
+    
+    grid-template-columns: 150px 150px;
+    grid-template-rows: repeat(auto, 50px);
+    grid-template-areas:
+        "name name"
+        "birth_date birth_date"
+        "weight_kg weight_kg"
+        "size_cm size_cm"
+        "tollwut_impfung tollwut_impfung"
+        "breed breed"
+        "description description"
+        "zeichenanzahl zeichenanzahl"
+        "doggo doggo"
+        "save buttonDel";
+}
+#birth_date {
+    grid-area: birth_date;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+#buttonDel {
+    grid-area: buttonDel;
+    justify-self: right;
+}
+#dog_file{
+    grid-area: doggo;
+
+    box-sizing: border-box;
+}
+
+
+#zeichenanzahl {
+    grid-area: zeichenanzahl;
+    height: 20px;
+    margin: 0px;
+}
+#name {
+    grid-area: name;
+}
+#weight_kg {
+    grid-area: weight_kg;
+}
+#size_cm {
+    grid-area: size_cm;
+}
+#geimpft {
+    grid-area: tollwut_impfung;
+}
+#breed {
+    grid-area: breed;
+}
+#description {
+    grid-area: description;
+    border-radius: 5px;
+}
+#save {
+    grid-area: save;
+}
+#showDog {
+    margin-left: 20px;
+
+}
+#showDog a {
+    text-decoration: none;
+    color: black;
+}
+.card, #collectionTables{
+    box-shadow: 1px 1px 15px grey;
+    background-color: rgb(255, 244, 236);;
+    border-radius: 10px;
+}
+
+#block {
+    padding-left: 20px;
+}
+
+form input, #dog_file,
+#safe, textarea, #birth_date {
+    border-radius: 5px;
+    border: solid black 1px;
+    padding: 5px;
+    font-size: 16px;
+    background: transparent;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#beschreibung ul {
+    text-align: left;
+}
+#beschreibung {
+    padding-right: 20px;
+}
+
+#doggoTable {
+    overflow-wrap: break-word;
+}
+
+#doggoTable th {
+    padding: 20px 20px 10px 20px;
+}
+#doggoTable td {
+    text-align: center;
+    height: 170px;
+}
+h1 {
+    padding-left: 20px;
+}
+.deleteButton {
+    display: none;
+}
+
+.button {
+    border: solid black 1px;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    
+}
+.doggoPic {
+    object-fit: cover;
+    height: 150px;
+    width:100px;
+    margin-left: 20px;
+    border-radius: 15px;   
+}
+tr:has(input.checked:checked) .doggoPic {
+    outline: 3px solid yellowgreen;
+    outline-offset: 3px;
+}
+#dogform {
+    margin: 0px;
+}
+

@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#feeding_table {
+    
+    padding: 20px;
+    justify-self:center;
+    border-spacing: 0 10px;
+    
+}
+#feeding_table th {
+    width: 180px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+#feeding_table th:nth-child(6), 
+#feeding_table td:nth-child(6) {
+    width: 35px;
+}
+#feeding_table td {
+    min-width: 100px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.tables{
+    margin-top: 20px;
+    width: 300px;
+    vertical-align: middle;
+    
+}
+
+#feeding_table thead th{
+padding-bottom: 2px;
+border-bottom: solid black 1px;
+
+}
+.tables tbody th{    
+    text-align: left;
+    min-width: 80px;    
+    vertical-align: middle;
+}
+
+.tables tbody td{
+    text-align: right;
+    vertical-align: middle;
+}
+#collectionTables{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    padding: 20px;
+    box-sizing: border-box;    
+}
+#collectionTables a{
+    cursor:default;
+    }
+
+#gesamt_feed{
+    display: flex;
+    flex-direction: row-reverse;
+    width: fit-content;
+    align-items: stretch;   
+    padding-top: 50px;
+    margin: 0 auto;
+    gap: 20px;
+}
+nav a{
+    font-size: 18px;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 8px;
+    padding: 8px;
+    display: inline-flex;
+
+
+}
+nav{
+    padding: 20px;
+}
+#block1{
+    display: flex;
+    margin-left: 230px;
+    margin-top: 30px
+}
+button{
+    margin-top: 20px;
+    font-size: 16px;;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 8px;
+    border: solid black 1px;
+    padding: 7px 7px;
+    border: none;
+    background-color: #f3e6dc;
+    cursor: pointer;
+    
+}
